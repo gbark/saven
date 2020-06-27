@@ -48,7 +48,7 @@ $("a").mouseup(function () {
 // Create the script tag, set the appropriate attributes
 var script = document.createElement("script");
 script.src =
-  "https://maps.googleapis.com/maps/api/js?key=AIzaSyAejkXGPr0Mcc_vplMLZPxrXccI1-48iWE&callback=initMap";
+  "https://maps.googleapis.com/maps/api/js?key=AIzaSyCaFsztkURrK-bB7raXAHyuqqtEq7RT8Xo&callback=initMap";
 script.defer = true;
 script.async = true;
 
