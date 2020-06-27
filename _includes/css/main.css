@@ -197,6 +197,9 @@ a:focus {
 .intro .intro-body {
     display: table-cell;
     vertical-align: middle;
+
+    position: absolute;
+    bottom: 0;
 }
 
 .intro .intro-body .brand-heading {
@@ -211,6 +214,10 @@ a:focus {
     .intro {
         height: 100%;
         padding: 0;
+    }
+    .intro .intro-body {
+        bottom: auto;
+        position: relative;
     }
 
     .intro .intro-body .brand-heading {
