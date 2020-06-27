@@ -3,6 +3,10 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 body {
     width: 100%;
@@ -204,6 +208,8 @@ a:focus {
 
 .intro .intro-body .brand-heading {
     font-size: 40px;
+    text-transform: none;
+    font-family: 'Great Vibes', cursive;
 }
 
 .intro .intro-body .intro-text {
