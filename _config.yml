@@ -1,6 +1,8 @@
 # Site settings
 title: Säven Seltzer
 email: hello@savenseltzer.com
+email_hello: hello@savenseltzer.com
+email_info: info@savenseltzer.com
 url: https://savenseltzer.com
 description: "Sparkingly fresh seltzer from the deep forests of Sweden"
 
