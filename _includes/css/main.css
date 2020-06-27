@@ -63,10 +63,9 @@ a:focus {
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255,255,255,.3);
+    border-bottom: 0;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: {{ site.color.primary-dark }};
 }
 
 .navbar-custom .navbar-brand {
@@ -80,7 +79,20 @@ a:focus {
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
-    color: #fff;
+}
+
+.navbar-toggle {
+    color: white;
+    margin: 0 !important;
+    position: relative;
+    top: 5px;
+    right: 7px;
+    background-color: {{ site.color.primary-dark }};
+    opacity: 0.7;
+}
+
+.navbar-main-collapse {
+    background-color: {{ site.color.primary-dark }};
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
@@ -92,6 +104,10 @@ a:focus {
     color: #fff;
 }
 
+.navbar-brand  {
+    display: none;
+}
+
 .navbar-custom .nav li.active {
     outline: none;
     background-color: rgba(255,255,255,.3);
@@ -101,7 +117,7 @@ a:focus {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
-    color: {{ site.color.primary-dark }};
+    color: white;
 }
 
 .navbar-custom .nav li a:hover,
@@ -112,6 +128,22 @@ a:focus {
 }
 
 @media(min-width:767px) {
+    .navbar-main-collapse {
+        background-color: transparent;
+    }
+
+    .navbar-toggle {
+        color: white;
+    }
+
+    .navbar-custom {
+        border-bottom: 1px solid rgba(255,255,255,.3);
+    }
+
+    .navbar-brand  {
+        display: block;
+    }
+
     .navbar {
         padding: 20px 0;
         border-bottom: 0;
@@ -123,8 +155,17 @@ a:focus {
     }
 
     .top-nav-collapse {
+        background-color: {{ site.color.primary-dark }};
+        color: white;
+    }
+
+    .top-nav-collapse {
         padding: 0;
         background-color: {{ site.color.primary-dark }};
+    }
+
+    .navbar-fixed-top .nav li a {
+        color: {{ site.color.primary-dark }};
     }
 
     .top-nav-collapse .nav li a {
@@ -133,6 +174,7 @@ a:focus {
 
     .navbar-custom.top-nav-collapse {
         border-bottom: 1px solid rgba(255,255,255,.3);
+        color: white;
     }
 }
 
