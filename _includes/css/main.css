@@ -141,6 +141,10 @@ a:focus {
         color: white;
     }
 
+    html#ecwid_html body#page-top.buy-page .ec-minicart__icon .icon-default path[stroke], html#ecwid_html body#page-top.buy-page .ec-minicart__icon .icon-default circle[stroke] {
+        stroke: white !important;
+    }
+
     .buy-page .navbar-fixed-top .nav li a {
         color: white;
     }
@@ -179,6 +183,10 @@ a:focus {
 
     .top-nav-collapse .navbar-nav li a {
         color: white;
+    }
+
+    html#ecwid_html body#page-top .top-nav-collapse .ec-minicart__icon .icon-default path[stroke], html#ecwid_html body#page-top .top-nav-collapse .ec-minicart__icon .icon-default circle[stroke] {
+        stroke: white !important;
     }
 
     .navbar-custom.top-nav-collapse {
