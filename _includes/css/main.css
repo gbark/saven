@@ -136,6 +136,15 @@ a:focus {
         background-color: transparent;
     }
 
+    .buy-page .navbar-fixed-top {
+        background-color: {{ site.color.primary-dark }};
+        color: white;
+    }
+
+    .buy-page .navbar-fixed-top .nav li a {
+        color: white;
+    }
+
     .navbar-toggle {
         color: white;
     }
@@ -160,19 +169,15 @@ a:focus {
 
     .top-nav-collapse {
         background-color: {{ site.color.primary-dark }};
-        color: white;
-    }
-
-    .top-nav-collapse {
+        color: {{ site.color.yellow }};
         padding: 0;
-        background-color: {{ site.color.primary-dark }};
     }
 
     .navbar-fixed-top .nav li a {
         color: {{ site.color.primary-dark }};
     }
 
-    .top-nav-collapse .nav li a {
+    .top-nav-collapse .navbar-nav li a {
         color: white;
     }
 
