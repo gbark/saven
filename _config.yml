@@ -31,3 +31,6 @@ social:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+include:
+  - .well-known
